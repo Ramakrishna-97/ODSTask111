@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.1155" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable-v24/ic_baseline_person_add_24.xml" value="0.1155" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable/dialog1_bg.xml" value="0.14" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable/dialog2_bg.xml" value="0.1155" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable/dialog_bg.xml" value="0.1155" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable/radius.xml" value="0.1155" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/drawable/radius2.xml" value="0.1155" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/activity_main2.xml" value="0.18" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/bottom1_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/bottom2_layout.xml" value="0.203125" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/bottom_layout.xml" value="0.203125" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/fragment_1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/fragment_2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/fragment_frament1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/fragment_second.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/layout/tab_layout.xml" value="0.203125" />
+        <entry key="..\:/Users/RamakrishnaBoddula/AndroidStudioProjects/ODSTask/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
