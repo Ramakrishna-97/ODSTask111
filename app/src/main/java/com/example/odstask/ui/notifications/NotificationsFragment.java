@@ -9,10 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,16 +22,18 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.odstask.Fragment1;
 import com.example.odstask.Fragment2;
-import com.example.odstask.MainActivity2;
 import com.example.odstask.R;
 import com.example.odstask.VPAdapter;
 import com.example.odstask.databinding.FragmentNotificationsBinding;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.tabs.TabLayout;
 
 public class NotificationsFragment extends Fragment {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
+
 
     private int[] tabicon={
             R.drawable.post,R.drawable.img
@@ -49,6 +49,7 @@ public class NotificationsFragment extends Fragment {
 
     ImageView downsheet;
 
+    TextView ramname;
 
   private FragmentNotificationsBinding binding;
 
@@ -60,21 +61,41 @@ public class NotificationsFragment extends Fragment {
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        tabLayout=root.findViewById(R.id.tabLayout);
-        viewPager=root.findViewById(R.id.viewpager);
 
-        tabLayout.setupWithViewPager(viewPager);
+        tabLayout=root.findViewById(R.id.tablayoutid);
+        viewPager=root.findViewById(R.id.viewpagerid);
+
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.post));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.img));
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        final VPAdapter adapter = new VPAdapter(getFragmentManager(),getContext(),tabLayout.getTabCount());
+            viewPager.setAdapter(adapter);
+
+            viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+            tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+                @Override
+                public void onTabSelected(TabLayout.Tab tab) {
+                    viewPager.setCurrentItem(tab.getPosition());
+                }
+
+                @Override
+                public void onTabUnselected(TabLayout.Tab tab) {
+
+                }
+
+                @Override
+                public void onTabReselected(TabLayout.Tab tab) {
+
+                }
+            });
+
+            tabLayout.setupWithViewPager(viewPager);
+
+
 
         loadtab();
 
-        downsheet=root.findViewById(R.id.downarrow);
-        downsheet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                thirdDialog();
-            }
-        });
 
 
 
@@ -96,6 +117,22 @@ public class NotificationsFragment extends Fragment {
 
             }
         });
+
+        downsheet=root.findViewById(R.id.downarrow);
+        downsheet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                thirdDialog();
+            }
+        });
+        ramname=root.findViewById(R.id.ramnameid);
+        ramname.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                thirdDialog();
+            }
+        });
         return root;
 
     }
@@ -106,8 +143,8 @@ public class NotificationsFragment extends Fragment {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.bottom2_layout);
 
-        LinearLayout raamlayout = dialog.findViewById(R.id.image11);
-        LinearLayout accountlayout = dialog.findViewById(R.id.image22);
+        LinearLayout raamlayout = dialog.findViewById(R.id.ralayoutid1);
+        LinearLayout accountlayout = dialog.findViewById(R.id.acountid1);
 
         raamlayout.setOnClickListener(new View.OnClickListener() {
             @Override
